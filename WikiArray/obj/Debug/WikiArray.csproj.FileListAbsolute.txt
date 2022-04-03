@@ -25,9 +25,9 @@ C:\Users\kaela\Downloads\C#Update\WikiArray\bin\Debug\WikiArray.exe
 C:\Users\kaela\Downloads\C#Update\WikiArray\bin\Debug\WikiArray.pdb
 C:\Users\kaela\Downloads\C#Update\WikiArray\obj\Debug\WikiArray.csproj.AssemblyReference.cache
 C:\Users\kaela\Downloads\C#Update\WikiArray\obj\Debug\WikiArray.csproj.SuggestedBindingRedirects.cache
-C:\Users\kaela\Downloads\C#Update\WikiArray\obj\Debug\WikiArray.Form1.resources
 C:\Users\kaela\Downloads\C#Update\WikiArray\obj\Debug\WikiArray.Properties.Resources.resources
 C:\Users\kaela\Downloads\C#Update\WikiArray\obj\Debug\WikiArray.csproj.GenerateResource.cache
 C:\Users\kaela\Downloads\C#Update\WikiArray\obj\Debug\WikiArray.csproj.CoreCompileInputs.cache
 C:\Users\kaela\Downloads\C#Update\WikiArray\obj\Debug\WikiArray.exe
 C:\Users\kaela\Downloads\C#Update\WikiArray\obj\Debug\WikiArray.pdb
+C:\Users\kaela\Downloads\C#Update\WikiArray\obj\Debug\WikiArray.WikiArrayForm.resources

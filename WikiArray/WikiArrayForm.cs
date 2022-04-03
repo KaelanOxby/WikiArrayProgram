@@ -186,21 +186,30 @@ namespace WikiArray
             }
             else
             {
-                string currentItem = listBoxArray.SelectedItem.ToString();
-                int indx = listBoxArray.FindString(currentItem);
-                for (int i = indx; i < arrayMax - 1; i++)
+                DialogResult DeleteTask = MessageBox.Show("Are you sure you want to Delete this task?", "Confirmation",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (DeleteTask == DialogResult.Yes)
                 {
-                    wikiArray[i, 0] = wikiArray[i + 1, 0];
-                    wikiArray[i, 1] = wikiArray[i + 1, 1];
-                    wikiArray[i, 2] = wikiArray[i + 1, 2];
-                    wikiArray[i, 3] = wikiArray[i + 1, 3];
+                    string currentItem = listBoxArray.SelectedItem.ToString();
+                    int indx = listBoxArray.FindString(currentItem);
+                    for (int i = indx; i < arrayMax - 1; i++)
+                    {
+                        wikiArray[i, 0] = wikiArray[i + 1, 0];
+                        wikiArray[i, 1] = wikiArray[i + 1, 1];
+                        wikiArray[i, 2] = wikiArray[i + 1, 2];
+                        wikiArray[i, 3] = wikiArray[i + 1, 3];
 
+                    }
+                    wikiArray[arrayMax - 1, 0] = null;
+                    wikiArray[arrayMax - 1, 1] = null;
+                    wikiArray[arrayMax - 1, 2] = null;
+                    wikiArray[arrayMax - 1, 3] = null;
+                    arrayMax--;
+                } else
+                {
+                    MessageBox.Show("You have chosen not to delete this Item");
                 }
-                wikiArray[arrayMax - 1, 0] = null;
-                wikiArray[arrayMax - 1, 1] = null;
-                wikiArray[arrayMax - 1, 2] = null;
-                wikiArray[arrayMax - 1, 3] = null;
-                arrayMax--;
+                    
             }
 
         }
@@ -349,6 +358,7 @@ namespace WikiArray
             Remove();
             Sort();
             DisplayWikiArray();
+            ClearTextFields();
         }
     }
 }
