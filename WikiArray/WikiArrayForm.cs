@@ -160,7 +160,50 @@ namespace WikiArray
         }
 
         // Select item from the listbox and override the original array item
-        
+        private void Edit()
+        {
+            if (listBoxArray.SelectedIndex >= 0)
+            {
+                string currentItem = listBoxArray.SelectedItem.ToString();
+                int indx = listBoxArray.FindString(currentItem);
+                wikiArray[listBoxArray.SelectedIndex, 0] = textBoxName.Text;
+                wikiArray[listBoxArray.SelectedIndex, 1] = textBoxCategory.Text;
+                wikiArray[listBoxArray.SelectedIndex, 2] = textBoxStructure.Text;
+                wikiArray[listBoxArray.SelectedIndex, 3] = textBoxDefinition.Text;
+            } else
+            {
+                textBoxDefinition.Text = "You have to select something to edit first";
+            }
+
+        }
+
+        // Gets the index of the element from listbox and moves every element up 1 and returns null for last element.
+        private void Remove()
+        {
+            if (listBoxArray.SelectedItem == null)
+            {
+                textBoxDefinition.Text = "You have to select something to edit first";
+            }
+            else
+            {
+                string currentItem = listBoxArray.SelectedItem.ToString();
+                int indx = listBoxArray.FindString(currentItem);
+                for (int i = indx; i < arrayMax - 1; i++)
+                {
+                    wikiArray[i, 0] = wikiArray[i + 1, 0];
+                    wikiArray[i, 1] = wikiArray[i + 1, 1];
+                    wikiArray[i, 2] = wikiArray[i + 1, 2];
+                    wikiArray[i, 3] = wikiArray[i + 1, 3];
+
+                }
+                wikiArray[arrayMax - 1, 0] = null;
+                wikiArray[arrayMax - 1, 1] = null;
+                wikiArray[arrayMax - 1, 2] = null;
+                wikiArray[arrayMax - 1, 3] = null;
+                arrayMax--;
+            }
+
+        }
 
         // Clear all the text fields
         private void ClearTextFields()
@@ -296,12 +339,14 @@ namespace WikiArray
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
+            Edit();
             DisplayWikiArray();
             ClearTextFields();
         }
 
         private void buttonRemove_Click(object sender, EventArgs e)
         {
+            Remove();
             Sort();
             DisplayWikiArray();
         }
