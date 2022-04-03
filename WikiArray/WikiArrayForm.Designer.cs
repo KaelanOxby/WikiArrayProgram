@@ -129,7 +129,7 @@
             // buttonOpen
             // 
             this.buttonOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOpen.Location = new System.Drawing.Point(244, 598);
+            this.buttonOpen.Location = new System.Drawing.Point(570, 589);
             this.buttonOpen.Name = "buttonOpen";
             this.buttonOpen.Size = new System.Drawing.Size(156, 50);
             this.buttonOpen.TabIndex = 9;
@@ -202,7 +202,7 @@
             // btnClear
             // 
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Location = new System.Drawing.Point(244, 514);
+            this.btnClear.Location = new System.Drawing.Point(244, 589);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(156, 50);
             this.btnClear.TabIndex = 7;
@@ -213,7 +213,7 @@
             // buttonEdit
             // 
             this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEdit.Location = new System.Drawing.Point(570, 598);
+            this.buttonEdit.Location = new System.Drawing.Point(244, 514);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(156, 50);
             this.buttonEdit.TabIndex = 16;
