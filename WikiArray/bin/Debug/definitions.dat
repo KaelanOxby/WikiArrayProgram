@@ -1,0 +1,8 @@
+2D ArrayArrayLinearaA two-dimensional array can be considered an array of arrays as it uses an array as its elements.ArrayArrayLinearAAn array is a collection of values or objects with the same type.Binary Search TreeTree
+Non-LinearZA Binary Search tree is a binary tree where every node has a particular ordering property.GraphGraphs
+Non-Linear‡A Graph is a data structure that contains a limited number of vertical nodes and a limited number of connections to the vertical nodes.
+Hash TableHash
+Non-LinearHA Hash table is a data structure that is used to store keys/value pairs.HeapTree
+Non-LinearaA heap is a hierarchical collection of data that has no constraints on what data can be accessed.Linked ListListLinearjA linked list is a linear collection of data where the order is defined by their physical place in memory.ListListLinear?A list is a group of objects that are held in a specific order.QueueAbstractLinearLA queue is a collection of elements that follows a first in first out basis.Self-Balance TreeTree
+Non-Linear[A self-balanced tree is a node-based binary tree that automatically keeps its height small.SetAbstract
+Non-Linear4A set is an unordered collection of unique elements.StackAbstractLinearfA Stack is a collection of objects that uses a first in first out basis and follows a Linear approach.
